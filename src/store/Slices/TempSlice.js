@@ -1,9 +1,11 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
-export const fetchData = createAsyncThunk("fetch-items", async () => {});
+export const fetchData = createAsyncThunk("fetch-items", async () => {
+  return [];
+});
 
-const SliceName = createSlice({
-  name: "slice-name",
+const TempSlice = createSlice({
+  name: "temp-slice",
   initialState: {
     loading: false,
     data: [],
@@ -25,4 +27,4 @@ const SliceName = createSlice({
   },
 });
 
-export default SliceName.reducer;
+export default TempSlice.reducer;
